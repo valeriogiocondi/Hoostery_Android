@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:fillViewport="true"
+    app:layout_scrollFlags="scroll"
+    tools:context="com.hoostery.user.hoostery.RestaurantProfile.RestaurantBookingSummary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:layout_marginTop="30sp"
+            android:gravity="center"
+            android:text="Riepilogo"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40sp"
+            android:orientation="horizontal"
+            android:textAlignment="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.22"
+                android:gravity="center"
+                android:text="Prenotazione per il giorno:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/check_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:textAlignment="textStart"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40sp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.16"
+                android:gravity="center"
+                android:text="Per le ore:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/check_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.12"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.22"
+                android:gravity="center"
+                android:text="Numero coperti:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/check_num_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30sp"
+            android:layout_marginTop="30sp"
+            android:background="@color/common_google_signin_btn_text_dark_disabled"
+            android:orientation="vertical"
+            android:paddingBottom="100px"
+            android:paddingTop="100px"
+            android:weightSum="1"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <TextView
+                android:id="@+id/menu_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30sp"
+                android:layout_weight="0.10"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10sp"
+                android:paddingTop="10sp"
+                android:text="Titolo Menù"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/menu_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="60sp"
+                android:layout_weight="0.10"
+                android:background="@color/colorPrimary"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:text="CONFERMA PRENOTAZIONE"
+                android:textColor="#FFF" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

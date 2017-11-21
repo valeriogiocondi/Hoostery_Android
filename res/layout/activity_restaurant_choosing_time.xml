@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="false"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="20sp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.hoostery.user.hoostery.RestaurantProfile.RestaurantChoosingTime">
+
+    <LinearLayout
+        android:id="@+id/layout_lunch"
+        android:layout_width="match_parent"
+        android:layout_height="234dp"
+        android:layout_marginBottom="20sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lunch_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:text="PRANZO"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <GridView
+            android:id="@+id/gridview_lunch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnWidth="110sp"
+            android:gravity="center"
+            android:horizontalSpacing="10sp"
+            android:numColumns="auto_fit"
+            android:verticalSpacing="10sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_dinner"
+        android:layout_width="match_parent"
+        android:layout_height="234dp"
+        android:layout_marginBottom="20sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dinner_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:text="CENA"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <GridView
+            android:id="@+id/gridview_dinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnWidth="110sp"
+            android:gravity="center"
+            android:horizontalSpacing="10sp"
+            android:numColumns="auto_fit"
+            android:verticalSpacing="10sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
